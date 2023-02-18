@@ -33,7 +33,7 @@ class GameFragment : Fragment() {
         // Set the viewModel for data binding - this allows the bound layout access
         // to all the data in the VieWModel
         binding.gameViewModel = viewModel
-        binding.maxNoOfWords = MAX_NO_OF_WORDS
+        binding.maxNoOfWords = allWordsList.size
         // Specify the fragment view as the lifecycle owner of the binding.
         // This is used so that the binding can observe LiveData updates
         binding.lifecycleOwner = viewLifecycleOwner
